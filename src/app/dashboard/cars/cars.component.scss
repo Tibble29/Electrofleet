@@ -1,0 +1,54 @@
+.mat-card {
+    min-height: 150px;
+    margin-bottom: 20px;
+}
+
+.car-info {
+    display: block;
+    margin: 10px 0px;
+}
+
+.topImage img {
+    height: 125px;
+    width: 100%;
+}
+
+.status-bar-red {
+    background: repeating-linear-gradient(
+        -55deg,
+        #cc0000,
+        #cc0000 10px,
+        #B20000 10px,
+        #B20000 20px
+      );
+    color: #FFF;
+    padding: 0px 10px;
+}
+
+.status-bar-orange {
+    background: repeating-linear-gradient(
+        -55deg,
+        #e59400,
+        #e59400 10px,
+        #FFA500 10px,
+        #FFA500 20px
+      );
+    color: #FFF;
+    padding: 0px 10px;
+}
+
+.status-bar-green {
+    background: repeating-linear-gradient(
+        -55deg,
+        #00CC00,
+        #00CC00 10px,
+        #00B200 10px,
+        #00B200 20px
+      );
+    color: #FFF;
+    padding: 0px 10px;
+}
+
+::ng-deep.mat-card-header-text {
+    margin: 0px !important;
+}

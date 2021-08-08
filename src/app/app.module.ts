@@ -10,12 +10,14 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import { MatInputModule } from "@angular/material/input";
 import {MatButtonModule} from '@angular/material/button';
+import { CarsComponent } from './dashboard/cars/cars.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    CarsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-4" *ngFor='let car of carData'>
+            <mat-card>
+                <mat-card-header>
+                    <div class="topImage">
+                        <img src='../../../assets/images/{{car.img}}'>
+                    </div>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="car-info">
+                        <span class="car-info"><strong>Registration:</strong> {{car.registration}}</span>
+                        <span class="car-info"><strong>Car Make:</strong> {{car.make}}</span>
+                        <span class="car-info"><strong>Model:</strong> {{car.model}} </span> 
+                    </div>
+                </mat-card-content>
+                <mat-card-footer>
+                    <div class="status-bar-red" *ngIf='car.batteryPercentage > -1 && car.batteryPercentage < 25'>
+                        <span>Battery Percentage {{car.batteryPercentage}}%</span>
+                    </div>
+                    <div class="status-bar-orange" *ngIf='car.batteryPercentage > 25 && car.batteryPercentage < 50'>
+                        <span>Battery Percentage {{car.batteryPercentage}}%</span>
+                    </div>
+
+                    <div class="status-bar-green" *ngIf='car.batteryPercentage > 50'>
+                        <span>Battery Percentage {{car.batteryPercentage}}%</span>
+                    </div>
+
+                </mat-card-footer>
+            </mat-card>
+        </div>
+    </div>
